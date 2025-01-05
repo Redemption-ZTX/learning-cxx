@@ -27,6 +27,8 @@ int main(int argc, char **argv) {
     fib.cache[0] = 0;
     fib.cache[1] = 1;
     fib.cached = 1;
+
+
     ASSERT(fib.get(10) == 55, "fibonacci(10) should be 55");
     std::cout << "fibonacci(10) = " << fib.get(10) << std::endl;
     return 0;

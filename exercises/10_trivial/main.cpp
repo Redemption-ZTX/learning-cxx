@@ -27,9 +27,11 @@ int main(int argc, char **argv) {
     // READ: 初始化的各种写法 <https://zh.cppreference.com/w/cpp/language/initialization>
 
 
-        FibonacciCache fib = {{0}, 1};// 初始化缓存的第一个值
+    FibonacciCache fib = {{0}, 1};// 初始化缓存的第一个值
     fib.cache[0] = 0;
     fib.cache[1] = 1;
+
+
     ASSERT(fibonacci(fib, 10) == 55, "fibonacci(10) should be 55");
     std::cout << "fibonacci(10) = " << fibonacci(fib, 10) << std::endl;
     return 0;
