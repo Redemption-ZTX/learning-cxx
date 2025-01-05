@@ -19,6 +19,8 @@ int main(int argc, char **argv) {
     // TODO: 初始化缓存结构体，使计算正确
     // NOTICE: C/C++ 中，读取未初始化的变量（包括结构体变量）是未定义行为
     // READ: 初始化的各种写法 <https://zh.cppreference.com/w/cpp/language/initialization>
+
+
     FibonacciCache fib;
     ASSERT(fibonacci(fib, 10) == 55, "fibonacci(10) should be 55");
     std::cout << "fibonacci(10) = " << fibonacci(fib, 10) << std::endl;
