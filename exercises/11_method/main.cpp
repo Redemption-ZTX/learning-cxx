@@ -20,7 +20,7 @@ int main(int argc, char **argv) {
     Fibonacci fib;
     fib.cache[0] = 0;
     fib.cache[1] = 1;
-    fib.cached = 1;
+    fib.cached = 2;
 
 
     ASSERT(fib.get(10) == 55, "fibonacci(10) should be 55");
