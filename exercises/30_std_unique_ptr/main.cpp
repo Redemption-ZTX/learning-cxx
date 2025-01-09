@@ -57,7 +57,6 @@ int main(int argc, char **argv) {
 
     std::vector<const char *> answers[]{
         {"fd"},
-        // Fill in the correct sequences based on the analysis
         {"", "", "r", "r", "", "", "d", ""},
         {"r", "", "r", "d", "", "", "d"},
     };
