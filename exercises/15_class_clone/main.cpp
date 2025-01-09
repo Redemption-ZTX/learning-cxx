@@ -51,6 +51,8 @@ int main(int argc, char **argv) {
     DynFibonacci fib(12);
     ASSERT(fib.get(10) == 55, "fibonacci(10) should be 55");
     DynFibonacci const fib_ = fib;
+
+
     ASSERT(fib_.get(10) == fib.get(10), "Object cloned");
     return 0;
 }
