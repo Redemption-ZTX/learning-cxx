@@ -12,7 +12,7 @@ int main(int argc, char **argv) {
         // THINK: `std::vector` 的大小是什么意思？与什么有关？
         ASSERT(sizeof(vec) == sizeof(std::vector<int>), "Fill in the correct value.");
         int ans[]{1, 2, 3, 4, 5};
-        ASSERT(std::memcmp(vec.?, ans, sizeof(ans)) == 0, "Fill in the correct values.");
+        ASSERT(std::memcmp(vec.data(), ans, sizeof(ans)) == 0, "Fill in the correct values.");
     }
     {
         std::vector<double> vec{1, 2, 3, 4, 5};
@@ -20,7 +20,7 @@ int main(int argc, char **argv) {
             ASSERT(vec.size() == 5, "Fill in the correct value.");
             ASSERT(sizeof(vec) == sizeof(std::vector<double>), "Fill in the correct value.");
             double ans[]{1, 2, 3, 4, 5};
-            ASSERT(std::memcmp(vec.?, ans, sizeof(ans)) == 0, "Fill in the correct values.");
+            ASSERT(std::memcmp(vec.data(), ans, sizeof(ans)) == 0, "Fill in the correct values.");
         }
         {
             vec.push_back(6);
