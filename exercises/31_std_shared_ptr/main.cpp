@@ -1,4 +1,4 @@
-﻿﻿#include "../exercise.h"
+﻿#include "../exercise.h"
 #include <memory>
 
 // READ: `std::shared_ptr` <https://zh.cppreference.com/w/cpp/memory/shared_ptr>
