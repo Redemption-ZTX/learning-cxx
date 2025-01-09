@@ -1,4 +1,5 @@
 ﻿#include "../exercise.h"
+#include <cstring>
 #include <memory>
 #include <string>
 #include <vector>
